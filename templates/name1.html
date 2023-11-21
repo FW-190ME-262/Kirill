@@ -8,10 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home</h1>
-    <a href="name2">FW-190</a>
-    <img src="image.jpg" alt="flite test" align="left">
+<h1>Home</h1>
+<table border="4">
+    <h2>
+        <p>
+            <rt>
+                <td width="60"><a href="{% url 'cf' %}">Home</a></td>
+                <td width="60"><a href="{% url 'main' %}">Karsar</a></td>
+                <td width="60"><a href="{% url 'vp'%}">Spitfair</a></td>
+                <td width="60"><a href="{%url 'vf'%}">fw-190</a></td>
+                <td width="60"><a href="{% url 'cl'%}">me-262</a></td>
+            </rt>
+        </p>
+    </h2>
 
-
+</table>
 </body>
 </html>
