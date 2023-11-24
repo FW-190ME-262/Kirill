@@ -19,3 +19,7 @@ def fw(request):
 
 def me(request):
     return render(request, 'me-262.html')
+
+
+def Test(request):
+    return render(request, 'Test.html')
