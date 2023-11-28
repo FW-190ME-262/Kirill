@@ -5,7 +5,7 @@ def flite(requsest):
     return render(requsest, 'name1.html')
 
 
-def name(request):
+def name1(request):
     return render(request, 'flite test.html')
 
 
