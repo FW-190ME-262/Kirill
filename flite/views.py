@@ -1,15 +1,19 @@
 from django.shortcuts import render
 
 
-def flite(requsest):
-    return render(requsest, 'name1.html')
+def reg(request):
+    return render(request, 'regist.html')
 
 
 def name1(request):
     return render(request, 'flite test.html')
 
 
-def spi(request):
+def flite(request):
+    return render(request, 'name1.html')
+
+
+def Spitfair(request):
     return render(request, 'Spitfair.html')
 
 

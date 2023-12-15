@@ -42,6 +42,127 @@ display: flex;
     text-decoration: none;}
 
 .rarsarfu4 {
-    width: 85555000000000000px
-    height: 70004400000000px;
+    width: 855550px
+    height: 700px;
+}
+
+
+body {  margin: 0;
+  padding: 0;
+  background-color: #282828;
+}
+.container {
+max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.v {  font-size:
+24px;
+  margin-top:
+  30px;
+  position:
+  relative;
+  top: 80px;
+  left: 600px;
+  color:
+  white;
+}
+.reg{
+width: 110px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    position:
+    relative;
+    top: 30px;
+    left: 888px;
+    color: white;
+    text-align: center;
+}
+.textreg{
+ position: relative;
+    top: -2x;
+    left: 2px;
+}
+.name{
+width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin-top: 20px;
+  border: 1px solid #FFF;
+  position: relative;
+  top: 30px;
+  left: 600px;
+  color: white;
+}
+.textname{
+position: relative;
+  top: 3px;
+  left: 16px;
+}
+.password{
+width: 100%;
+  max-width: 400px;
+   height: 60px;
+  margin-top: 20px;
+  border: 1px solid #FFF;
+  position: relative;
+  top: 30px;
+  left: 600px;
+   color: white;
+}
+.textpassword{
+position: relative;
+  top: 3px;
+  left: 16px;
+}
+.vhod {
+ width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin-top: 20px;
+  background: #FFF;
+  position: relative;
+   top: 30px;
+  left: 600px;
+   text-align: center;
+}
+.textvhod{
+position: relative;
+  top: 20px;
+   left: 2px;
+}
+body {
+ margin: 0;
+  padding: 0;
+   background-color: #282828;
+}
+.container {
+ max-width: 800px;
+  margin: 0 auto;
+   padding: 20px;
+}
+.v {
+font-size: 24px;
+  margin-top: 30px;
+    position: relative;
+  top: 80px;
+  left: 600px;
+  color: white;
+}
+.reg{
+ width: 110px;
+    height: 40px;
+       flex-shrink: 0;
+    border: 1px solid #FFF;
+        position: relative;
+    top: 30px;
+      left: 888px;
+    color: white;
+      text-align: center;
+}
+.textreg{
+  position: relative;
+    top: -2x;
+      left: 2px;
 }
