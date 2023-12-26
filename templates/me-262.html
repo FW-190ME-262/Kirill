@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,34 +6,48 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-<table border="1">
-    <rt>
-        <td>
-            <a href="{% url 'Home' %}">Home</a>
-            <p><img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2575/7925/DSC_4317-01__12584.1622830112.jpg?c=2"></p>
-        </td>
-    </rt>
-</table>
-<table border="1">
-    <rt>
-        <td>
-            <a href="name1.html">Начинка</a>
-            <p><img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2720/9360/Millennium-Flerken-Power-Add-on-9.11.23__59782.1694444103.jpg?c=2"></p>
-        </td>
-    </rt>
-</table>
-<table border="1">
-    <rt>
-        <td>
-            <H3><a href="name1.html">fLYSKY i6 + ia10</a></H3>
-            <p><img src="https://ae01.alicdn.com/kf/H29e991a024954a44bbdc0253104c9dcfH/FLYSKY-FS-i6X-FS-i6X-10CH-2-4GHz-AFHDS-2A-RC-Transmitter-With-X6B-iA6B-A8S.jpg"></p>
-        </td>
-    </rt>
-</table>
+    <h2><a href="{% url 'Home' %}">Home</a></h2></button>
+
+<div class="dropdown" data-bs-theme="light">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        Все
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+        <li><a class="dropdown-item active" href="#">могучии мини</a></li>
+        <li><a class="dropdown-item" href="kamikadze.html">коптер</a></li>
+        <li><a class="dropdown-item" href="#">начинка</a></li>
+        <li><a class="dropdown-item" href="#">пульты</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">орегаме</a></li>
+    </ul>
+</div>
+
+<p>
+    <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2575/7925/DSC_4317-01__12584.1622830112.jpg?c=2">
 </p>
+
+
+            <a href="Home.html">Начинка</a>
+            <p>
+                <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2720/9360/Millennium-Flerken-Power-Add-on-9.11.23__59782.1694444103.jpg?c=2">
+
+
+            <H3><a href="Home.html">fLYSKY i6 + ia10</a></H3>
+            <p>
+                <img src="https://ae01.alicdn.com/kf/H29e991a024954a44bbdc0253104c9dcfH/FLYSKY-FS-i6X-FS-i6X-10CH-2-4GHz-AFHDS-2A-RC-Transmitter-With-X6B-iA6B-A8S.jpg">
+            </p>
+        </p>
 
 </body>
 </html>

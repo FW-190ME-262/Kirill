@@ -2,10 +2,15 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('rigist/', views.reg, name="regist"),
-    path('h/', views.name1, name="Home"),
-    path('c/', views.me, name="me"),
-    path('Home/', views.flite, name="Karsar"),
-    path('a/', views.fw, name="fw-190"),
-    path('t/', views.Spitfair, name="Spitfair")
+    path('register/', views.register, name="register"),
+    path('', views.home, name="Home"),
+    path('me/', views.me, name="me"),
+    path('Corsair/', views.flite, name="Corsair"),
+    path('fw/', views.fw, name="fw"),
+    path('Spitfair/', views.Spitfair, name="Spitfair"),
+    path('kopter/', views.kopter, name="kopter"),
+    path('kon/', views.kon, name="kon"),
+    path('kamikadze/', views.kamikadze, name="kamikadze"),
+    path('nachinka/', views.nachinka, name="nachinka"),
+    path('detal/<int:pk>/', views.DetalVievs.as_view(), name='detal'),
 ]

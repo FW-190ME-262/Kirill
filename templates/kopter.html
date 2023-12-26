@@ -1,0 +1,89 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootstrap-5.ru/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-cssgrid">
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Ссылка</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Ссылка</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled">Отключенная</a>
+    </li>
+</ul>
+<figure class="figure">
+    <img src="" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">Подпись к изображению выше.</figcaption>
+</figure>
+
+<div class="dropdown" data-bs-theme="light">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        Все
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+        <li><a class="dropdown-item active" href="#">могучии мини</a></li>
+        <li><a class="dropdown-item" href="{% url 'kopter' %}">коптер</a></li>
+        <li><a class="dropdown-item" href="#">начинка</a></li>
+        <li><a class="dropdown-item" href="#">пульты</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">орегаме</a></li>
+    </ul>
+</div>
+<h2><a href="{% url 'Home' %}">Home</a></h2></button>
+
+<div class="card" style="width: 50rem;">
+    <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/products/2845/images/8850/IMG_0475__68120.1669219812.600.600.jpg?c=2"
+         class="card-img-top"
+         alt="https://cdn11.bigcommerce.com/s-x9hwh7on/products/2845/images/8850/IMG_0475__68120.1669219812.600.600.jpg?c=2">
+    <div class="card-body">
+        <h5 class="card-title">Карточка с растянутой ссылкой</h5>
+        <p class="card-text">Бесщеточный комплект FT Tiny Whoop</p>
+        <a href="#" class="btn btn-primary stretched-link">$139.99</a>
+    </div>
+</div>
+</div>
+
+
+<div class="card" style="width: 50rem;">
+    <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2814/8694/IMG_3429__22649.1666799660.jpg?c=2"
+         class="card-img-top"
+         alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2814/8694/IMG_3429__22649.1666799660.jpg?c=2">
+    <div class="card-body">
+        <h5 class="card-title">Карточка с растянутой ссылкой</h5>
+        <p class="card-text">Gremi на Hemi</p>
+        <a href="#" class="btn btn-primary stretched-link">$179.99</a>
+    </div>
+</div>
+
+
+<div class="card" style="width: 50rem;">
+    <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2685/8508/IMG_3837__15595.1662663359.jpg?c=2"
+         class="card-img-top"
+         alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/2685/8508/IMG_3837__15595.1662663359.jpg?c=2">
+    <div class="card-body">
+        <h5 class="card-title">Карточка с растянутой ссылкой</h5>
+        <p class="card-text">FT Guardian Gremlin v.2.</p>
+        <a href="#" class="btn btn-primary stretched-link">$159.99</a>
+    </div>
+</div>
+<div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+
+
+</body>
+</html>
