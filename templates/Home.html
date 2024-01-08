@@ -12,237 +12,472 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
-<!--   <link rel="stylesheet" href="{% static 'valera.css' %}">-->
+    <!--   <link rel="stylesheet" href="{% static 'valera.css' %}">-->
     <title>Document</title>
 </head>
-<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-cssgrid">
+<body>
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Flite test</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
-        </li>
-           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'kopter' %}">kopter</a>
-        </li>
-           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'nachinka' %}">nachinka</a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://www.elefun.no/bilder/prod_logo/423.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'kopter' %}">kopter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'nob' %}">beginners</a>
 
 
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'kon' %}">kon</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'kon' %}">confidentiality</a>
+                </li>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% url 'register' %}">register</a></li>
-            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-          </ul>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'register' %}">register</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
 
 
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-        <button class="btn btn-outline-success" type="submit">Поиск</button>
-      </form>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
     </div>
-  </div>
 </nav>
 
 
+<!--<style>-->
+<!--    .invisible-column {-->
+<!--      width: 50%; /* Можно изменить ширину по вашему усмотрению */-->
+<!--      height: 200px; /* Можно изменить высоту по вашему усмотрению */-->
+<!--      overflow: hidden;-->
+
+<!--      margin: 10px; /* Добавлен отступ для визуального разделения от других элементов */-->
+<!--    }-->
+<!--</style>-->
+<!--<div class="invisible-column" contenteditable="true">-->
+<!--    <h4>-->
+<!--        Добро пожаловать на второе поколение самолетов с 3D-печатью! Наши самолеты - самые легкие на рынке. Все наши-->
+<!--        самолеты были протестированы и при необходимости модифицированы для адаптации к механическим свойствам новых-->
+<!--        революционных нитей, таких как LW-PLA от Colorfabb. Мы гарантируем вам, что, несмотря на значительное снижение-->
+<!--        веса, наши модели по-прежнему достаточно прочны для выполнения любых фигур высшего пилотажа (более ± 10 Г) или-->
+<!--        жесткой посадки-->
+<!--        В настоящее время вы можете печатать функциональные детали для сложных механизмов, таких как радиоуправляемый-->
+<!--        самолет, даже на недорогом 3D-принтере без потери характеристик по сравнению с традиционными радиоуправляемыми-->
+<!--        самолетами. Все наши модели были протестированы с Anet A8, который является одним из самых дешевых принтеров на-->
+<!--        рынке. в дополнение к этому, основные электронные компоненты были стандартизированы, это означает, что вы можете-->
+<!--        использовать ту же электронику в любой из наших моделей, еще больше снизив цену.-->
+<!--    </h4>-->
+<!--</div>-->
 
 
 
 
 
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .full-width-block {
+      width: 100%;
+      height: 50vh; /* Здесь можно регулировать высоту в процентах от высоты экрана (50vh означает 50% высоты экрана) */
+      background-color: #f0f0f0; /* Цвет фона блока */
+    }
+</style>
+
+<div class="full-block">
+
+    <div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+
+    </div>
 
 
-
-
-
-
-
-
-<h3>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'Corsair' %}">Corsair</a>
-</h3>
-<h3>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'Spitfair' %}">Spitfair</a>
-</h3>
-<h3>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'fw' %}">fw-190 A</a>
-</h3>
-<h3>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'me' %}">me-262</a>
-</h3>
-
-
-<div class="reklama">
-    <img src="https://www.elefun.no/bilder/prod_logo/423.png">
 </div>
+</header>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2"
+                 class="d-block w-100"
+                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка первого слайда</h5>
+        <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2"
+                 class="d-block w-100"
+                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка второго слайда</h5>
+        <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2"
+                 class="d-block w-100"
+                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка третьего слайда</h5>
+        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+<!--<h3>-->
+<!--    <ul class="nav">-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="{% url 'Corsair' %}">Corsair</a>-->
+<!--</h3>-->
+<!--<h3>-->
+<!--    <ul class="nav">-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="{% url 'Spitfair' %}">Spitfair</a>-->
+<!--</h3>-->
+<!--<h3>-->
+<!--    <ul class="nav">-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="{% url 'fw' %}">fw-190 A</a>-->
+<!--</h3>-->
+<!--<h3>-->
+<!--    <ul class="nav">-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="{% url 'me' %}">me-262</a>-->
+<!--</h3>-->
+
+
+
 
 <img src="" class="img-fluid" alt="">
 <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=101845726548010" class="img-fluid" alt="">
 <!--https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=101845726548010-->
 
-<div class="text-bg-light p-3"></div>
 
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2"
-                 class="d-block w-100"
-                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2">
-        </div>
-        <div class="carousel-item">
-            <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2575/7925/DSC_4317-01__12584.1622830112.jpg?c=2"
-                 class="d-block w-100"
-                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2575/7925/DSC_4317-01__12584.1622830112.jpg?c=2">
-        </div>
-        <div class="carousel-item">
-            <img src="https://images.amain.com/images/large/flt/flt-1070.jpg" class="d-block w-100"
-                 alt="https://images.amain.com/images/large/flt/flt-1070.jpg">
-        </div>
-        <div class="carousel-item">
-            <img src="https://s3.amazonaws.com/assets.flitetest.com/editor_images%2F1551449714370-flt-1065.jpg"
-                 class="d-block w-100"
-                 alt="https://s3.amazonaws.com/assets.flitetest.com/editor_images%2F1551449714370-flt-1065.jpg">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Предыдущий</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Следующий</span>
-    </button>
+
+
+
+
+
+
+
+<!--    <div id="carouselExampleCaptions" class="carousel slide">-->
+<!--  <div class="carousel-indicators">-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+<!--  </div>-->
+<!--  <div class="carousel-inner">-->
+<!--    <div class="carousel-item active">-->
+<!--       <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2"-->
+<!--                 class="d-block w-100"-->
+<!--                 alt="https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/1280x1280/products/2615/8083/CQsD_ZRg__98745.1630695686.jpg?c=2">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка первого слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для первого слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--     <img src="https://images.amain.com/images/large/flt/flt-1070.jpg" class="d-block w-100"-->
+<!--                 alt="https://images.amain.com/images/large/flt/flt-1070.jpg">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка второго слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для второго слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--            <img src="https://s3.amazonaws.com/assets.flitetest.com/editor_images%2F1551449714370-flt-1065.jpg"-->
+<!--                 class="d-block w-100"-->
+<!--                 alt="https://s3.amazonaws.com/assets.flitetest.com/editor_images%2F1551449714370-flt-1065.jpg">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка третьего слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--         <div class="carousel-item">-->
+<!--     <img src="https://images.amain.com/images/large/flt/flt-1070.jpg" class="d-block w-100"-->
+<!--                 alt="https://images.amain.com/images/large/flt/flt-1070.jpg">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка третьего слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--     <div class="carousel-item">-->
+<!--      <img src="https://images.amain.com/images/large/flt/flt-1070.jpg" class="d-block w-100"-->
+<!--                 alt="https://images.amain.com/images/large/flt/flt-1070.jpg">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка третьего слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!-- <div class="carousel-item">-->
+<!--      <img src="https://images.amain.com/images/large/flt/flt-1070.jpg" class="d-block w-100"-->
+<!--                 alt="https://images.amain.com/images/large/flt/flt-1070.jpg">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка третьего слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Предыдущий</span>-->
+<!--  </button>-->
+<!--  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Следующий</span>-->
+<!--  </button>-->
+<!--</div>-->
+<!--<div id="carouselExampleCaptions" class="carousel slide">-->
+<!--  <div class="carousel-indicators">-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+<!--  </div>-->
+<!--  <div class="carousel-inner">-->
+<!--    <div class="carousel-item active">-->
+<!--      <img src="..." class="d-block w-100" alt="...">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка первого слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для первого слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img src="..." class="d-block w-100" alt="...">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка второго слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для второго слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img src="..." class="d-block w-100" alt="...">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Метка третьего слайда</h5>-->
+<!--        <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Предыдущий</span>-->
+<!--  </button>-->
+<!--  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Следующий</span>-->
+<!--  </button>-->
+<!--</div>-->
+
+
+
+
+<style>
+
+
+    #balanceDisplay {
+      position: absolute;
+      top: -972px;
+      left: 370px;
+    }
+  </style>
+  <script>
+    let balance = 10000;
+
+    function updateBalance(price) {
+      if (balance >= price) {
+        balance -= price;
+        document.getElementById('balanceDisplay').innerText = `Баланс: $${balance}`;
+      } else {
+        alert('Недостаточно средств!');
+      }
+    }
+  </script>
+
+
+<div id="balanceDisplay">Баланс: $10000</div>
+
+
+
+
+
+
+
+
+
 </div>
 <div class="text-bg-light p-45"></div>
-
-
-<div class="card text-bg-primary mb-3" style="max-width: 30rem;">
-    <div class="card-header">2-е ПОКОЛЕНИЕ</div>
-    <div class="card-body">
-        <p class="card-text">Добро пожаловать во второе поколение самолетов, напечатанных на 3D-принтере! Наши
-            самолеты
-            самые легкие на рынке. Все наши самолеты были протестированы и при необходимости модифицированы, чтобы
-            быть
-            адаптированными к механическим свойствам новых революционных нитей, таких как LW-PLA от Colorfabb. Мы
-            гарантируем вам, что, несмотря на огромное снижение веса, наши модели по-прежнему достаточно прочны,
-            чтобы
-            совершать любые фигуры высшего пилотажа (более ± 10G) или жесткую посадку.</p>
-    </div>
+<div class="invisible-column" contenteditable="true">
+    <h4>
+        Flite Test был создан для людей, увлеченных полетами. Мы надеемся побудить людей создавать и летать, увлекаться
+        инновациями и, самое главное, получать от этого удовольствие. Это мечтатели и инженеры, которые получают острые
+        ощущения от первого запуска первого полета. FliteTest олицетворяет как ветерана, так и новичка, давая им
+        возможность поделиться общим опытом с другими, что, в свою очередь, укрепляет сообщество. Цель - создать
+        творческую среду, которая позволит нам ежедневно отдаваться нашему увлечению. Flite Test разработан для
+        расширения возможностей нашей аудитории. В нем достаточно юмора, технологий и информации, чтобы понравиться всем
+        любителям радиоуправляемых самолетов. Мы надеемся развлекать, просвещать и возвышать наших зрителей по мере
+        продвижения вперед с качественным контентом.
 </div>
-<div class="card text-bg-info mb-3" style="max-width: 30rem;">
-    <div class="card-header">УЧИМСЯ
-        ПРИРОДА
-    </div>
-    <div class="card-body">
-        <p class="card-text">Мы полностью осознаем свободу дизайна, которую дает нам технология 3D-печати, но эта
-            свобода должна быть использована с умом, иначе вы не воспользуетесь этим невероятным способом
-            производства
-            вещей!.
 
-            Мы убеждены, что биомимикрия является отличным подходом к использованию этой свободы для разработки
-            легких,
-            прочных и эффективных самолетов.</p>
-    </div>
-</div>
+
 <style>
     body {
-        background-color: rgb(82, 84, 98);
+        background-color: #527F8F ;
     }
 </style>
 
-<div class="blok">
 
 
-</div>
-<div style="width: 200px; height: 200px;">
-    <a href="https://www.coca-cola.com">
-        <img src="coca-cola-ad.jpg" alt="Coca-Cola" style="width: 100%; height: 100%;">
-    </a>
-</div>
 
 
-https://cdn11.bigcommerce.com/s-x9hwh7on/images/stencil/400x400/products/442/1786/Seaduck_selection2_web__63523.1698856111.jpg?c=2
 
 
-<!--<p>{{i.name}}</p>-->
-<!--<p>{{i.description}}</p>-->
-<!--<img src="{{i.photo.url}}">-->
-<!--<p>{{i.Price}}</p>-->
 
-
-{% for i in aircrat %}
-<div class="w-75 p-3"></div>
-<div class="card" style="width: 50rem;">
-    <img src="{{i.photo.url}}" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{i.name}}</h5>
-        <p class="card-text">{{i.description}}</p>
-        <a href="{% url 'detal' i.id %}" class="btn btn-primary">Go somewhere</a>
+<div class="row" >
+    <div class="col">
+        <div id="news" class="row">
+            {% for el in aircrat %}
+            <div class="col-md-4">
+                <div class="card mb-3 h-100 d-flex align-items-stretch">
+                    <img src="{{ el.photo.url }}" class="card-img-top ratio ratio-4x3" alt="..." style="width: 100%; height: 320px;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ el.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ el.description }}</h6>
+                        <a href='{% url "detal" el.id %}'>Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
-{% endfor %}
 
-{% for i in kopter %}
-<div class="w-75 p-3"></div>
-<div class="card" style="width: 50rem;">
-    <img src="{{i.photo.url}}" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{i.name}}</h5>
-        <p class="card-text">{{i.description}}</p>
-        <a href="{% url 'detal' i.id %}" class="btn btn-primary">Go somewhere</a>
+<div class="row">
+    <div class="col">
+        <div id="news-list" class="row">
+            {% for el in kopter %}
+            <div class="col-md-4">
+                <div class="card mb-3 h-100 d-flex align-items-stretch">
+                    <img src="{{ el.photo.url }}" class="card-img-top ratio ratio-4x3" alt="..." style="width: 100%; height: 300px;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ el.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ el.description }}</h6>
+                        <a href='{% url "detal" el.id %}'>Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
-{% endfor %}
-<div class="w-75 p-3"></div>
 
-<div class="blok">
+
+
+
+
+
+
+
+
+
 
 </div>
 
 
+<style>
+    .black-rectangle {
+      width: 100px;
+      height: 50px;
+      background-color: black;
+    }
+</style>
 
 
+<style>
+    .black-box {
+        background-color: black;
+        color: white;
+        padding: 30px;
+        border-radius: px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 5000);
+    }
+</style>
+
+<div class="black-box">
+    <div class="invisible-column">
 
 
+        <style>
+            ul.hr { margin: 0; /* Обнуляем значение отступов */
+             padding: 10px; /* Значение полей */ } ul.hr li { display: inline; /* Отображать как строчный элемент */ margin-right: px; /* Отступ слева */ border: px solid #000; /* Рамка вокруг текста */ padding: px; /* Поля вокруг текста */ }
+        </style>
+
+        <ul class="hr">
+
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
 
+        <h3>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://t.me/Kiril1234fw">Contacts</a>
+        </h3>
 
 
+        <h3>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'nob' %}">Electronics</a>
+        </h3>
+
+        <h3>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://t.me/Kiril1234fw">SOS +996 558 738 877</a>
+        </h3>
 
 
+        </h3>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 </body>

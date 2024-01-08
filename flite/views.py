@@ -47,6 +47,12 @@ def nachinka(request):
     return render(request, 'nachinka.html')
 
 
+def adout(request):
+    return render(request, 'adout .html')
+
+
+def nob(request):
+    return render(request, 'nob.html')
 
 
 class DetalVievs(DetailView):
