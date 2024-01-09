@@ -8,6 +8,50 @@
     <link href="https://bootstrap-5.ru/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://www.elefun.no/bilder/prod_logo/423.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'kopter' %}">kopter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'nob' %}">beginners</a>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'kon' %}">confidentiality</a>
+                </li>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'register' %}">register</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
 </head>
 <body>
 
@@ -28,7 +72,7 @@
 <!--#396156-->
 <!--#00023D-->
 <!--#00011F-->
-<h2><a href="{% url 'Home' %}">Home</a></h2></button>
+
 
 <div class="card" style="width: 50rem;">
     <img src="https://cdn11.bigcommerce.com/s-x9hwh7on/products/2845/images/8850/IMG_0475__68120.1669219812.600.600.jpg?c=2"

@@ -6,12 +6,59 @@
 
 </head>
 <body>
-     <a href="{% url 'Home' %}"><h2>Home</h2></a>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://www.elefun.no/bilder/prod_logo/423.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'kopter' %}">kopter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'nob' %}">beginners</a>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'kon' %}">confidentiality</a>
+                </li>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'register' %}">register</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
 
 <style>
-body {
-background-color: #ADD8E6 ;
-}
+    body {
+    background-color: #ADD8E6 ;
+    }
 </style>
 <!--#1F5863-->
 <!--#2FA8FA-->
@@ -43,14 +90,14 @@ background-color: #ADD8E6 ;
         </div>
 
 
+
+        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
         <font size="60">
             Welcome to GeeksforGeeks
         </font>
         <font size="240">
 
-        </font>
-
-        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded"></div>
+        </font></div>
         <div class="text-center">
             <img src="https://beginner.flitetest.com/wp-content/uploads/2023/12/anatomy-of-an-rc-airplane-control-structures.webp"
                  class="rounded"
@@ -176,7 +223,7 @@ background-color: #ADD8E6 ;
                     Электроника
                 </font>
                 <font size="35">
-                    
+
                 </font>
             </h3>
             </p>
@@ -316,6 +363,70 @@ background-color: #ADD8E6 ;
             </h3>
             </p>
             <p>
+
+                <style>
+                    .black-rectangle {
+                      width: 100px;
+                      height: 50px;
+                      background-color: black;
+                    }
+                </style>
+
+
+                <style>
+                    .black-box {
+                        background-color: black;
+                        color: white;
+                        padding: 30px;
+                        border-radius: px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 5000);
+                    }
+                </style>
+
+            <div class="black-box">
+                <div class="invisible-column">
+
+
+                    <style>
+                        ul.hr { margin: 0; /* Обнуляем значение отступов */
+                         padding: 10px; /* Значение полей */ } ul.hr li { display: inline; /* Отображать как строчный элемент */ margin-right: px; /* Отступ слева */ border: px solid #000; /* Рамка вокруг текста */ padding: px; /* Поля вокруг текста */ }
+                    </style>
+
+                    <ul class="hr">
+
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+
+                    <h3>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                   href="https://t.me/Kiril1234fw">Contacts</a>
+                    </h3>
+
+
+                    <h3>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{% url 'nob' %}">Electronics</a>
+                    </h3>
+
+                    <h3>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://t.me/Kiril1234fw">+996 558
+                                    738 877</a>
+                    </h3>
+
+
+        </h3>
+
+
+        </div>
 
 
 </body>
